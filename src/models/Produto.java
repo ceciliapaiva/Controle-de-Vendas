@@ -8,14 +8,14 @@ public class Produto implements Serializable {
     private static final long serialVersionUID = 1l;
     private long cod;
     private String descricao;
-    private String classificacao;
+    private boolean maisDezoito;
     private double preco;
     GeradorDeCod geradorCod = new GeradorDeCod();
 
-    public Produto(String descricao,String classificacao, double preco) {
+    public Produto(String descricao, boolean maisDezoito, double preco) {
         this.cod = geradorCod.gerarCod();
         this.descricao = descricao;
-        this.classificacao = classificacao;
+        this.maisDezoito = maisDezoito;
         this.preco = preco;
     }
 
@@ -27,8 +27,8 @@ public class Produto implements Serializable {
         return descricao;
     }
 
-    public String getClassificacao() {
-        return classificacao;
+    public boolean getMaisDezoito() {
+        return maisDezoito;
     }
 
     public double getPreco() {
@@ -43,8 +43,8 @@ public class Produto implements Serializable {
         this.descricao = descricao;
     }
 
-    public void setClassificacao(String classificacao) {
-        this.classificacao = classificacao;
+    public void setMaisDezoito(boolean maisDezoito) {
+        this.maisDezoito = maisDezoito;
     }
 
     public void setPreco(double preco) {
@@ -56,7 +56,7 @@ public class Produto implements Serializable {
         return "Produto{" +
                 "cod=" + cod +
                 ", descricao='" + descricao + '\'' +
-                ", classificacao='" + classificacao + '\'' +
+                ", mais18='" + maisDezoito + '\'' +
                 ", preco=" + preco +
                 '}';
     }

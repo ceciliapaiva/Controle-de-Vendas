@@ -1,56 +1,47 @@
 package service;
 
+import arquivos.FileService;
 import models.Produto;
+import models.ProdutosPreDefinidos;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Logger;
 
 public class ProdutoService implements Serializable{
     private static final Logger logger = Logger.getLogger(ProdutoService.class.getName());
+    FileService fileService = new FileService();
     File file = new File("src/arquivos/produtos.txt");
-    List<Produto> listaProdutos = new ArrayList<>();
+    Map<String, Produto> mapProdutos = new HashMap<>();
+    Map<String, Produto> produtosRecuperados = new HashMap<>();
+
+    // construtor
+    public ProdutoService() throws IOException {
+        for (ProdutosPreDefinidos produto : ProdutosPreDefinidos.values()){
+            Produto novoProduto = new Produto(produto.getDescricao(), produto.isMaisDezoito(), produto.getPreco());
+            mapProdutos.put(novoProduto.getDescricao(), novoProduto);
+        }
+        mapProdutos.putAll(recuperaProdutos());
+    }
 
     // salvar produto no file
-    public void cadastrarProdutoNovo(String desc, String classif, double preco){
+    public void cadastrarProdutoNovo(String desc, boolean maisDezoito, double preco) throws IOException {
         //cria produto novo
-        Produto produto = new Produto(desc, classif, preco);
-        listaProdutos.add(produto);
+        Produto produto = new Produto(desc, maisDezoito, preco);
+        mapProdutos.put(produto.getDescricao(), produto);
 
-        try { // tenta criar o arquivo
-            file.createNewFile();
-            logger.info("Arquivo " + file.getPath() + " criado");
-
-            // tenta escrever produto
-            try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file))){
-                out.writeObject(listaProdutos);
-                logger.info("Produto slavo com sucesso no arquivo: " + file.getPath());
-            }catch (IOException e){
-                logger.severe("Error ao salvar o produto: " + e.getMessage());
-                e.printStackTrace();
-            }
-        }catch (IOException e){
-            logger.severe("Ocorreu error ao criar o arquivo: " + e.getMessage());
-            e.printStackTrace();
-        }
+        fileService.salvarObjetoEmTXT(file, mapProdutos);
     }
 
-    // Ler arquvo de produtos
-    public List<Produto> recuperaProdutos() {
-
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(file))){
-
-            logger.info("Lista de produtos recuperada: ");
-            List<Produto> produtosRecuperados = (List<Produto>) in.readObject();
-            logger.info(produtosRecuperados.toString());
-            listaProdutos.addAll(produtosRecuperados);
-
-        } catch (IOException | ClassNotFoundException e) {
-            logger.severe("Erro ao ler a lista de produtos: " + e.getMessage());
-            e.printStackTrace();
-        }
-        return listaProdutos;
+    // Ler arquivo de produtos
+    public Map<String, Produto> recuperaProdutos() throws IOException {
+        Map<String, Produto> produtosRecuperados = FileService.recuperarObjetoDeTXT(file);
+        return produtosRecuperados;
     }
 
+    // getters e setters
+    public Map<String, Produto> getMapProdutos() {
+        return mapProdutos;
+    }
 }
