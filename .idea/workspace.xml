@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="631165bb-7102-4568-8b19-92d9cbf9884f" name="Changes" comment="Inicio de VendaService e aprimoramento da estrutura.&#10;ProdutoService: esta carregando os ProdutosPreDefinidos e produtos.txt em um HashMap.&#10;Venda e VendaService: foi criado a estrutura e métodos efetuarVenda e salvarVenda.&#10;FileService: Nova classe">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controle_Vendas_GNbebidas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arquivos/Planejamento" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arquivos/produtos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arquivos/produtos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/GeradorDeCod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/GeradorDeCod.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2inXs39uLzLL4sELIKp6kRoDQt7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Controle_Vendas_GNbebidas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="631165bb-7102-4568-8b19-92d9cbf9884f" name="Changes" comment="" />
+      <created>1720127518818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720127518818</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Criar classes,&#10;construir classe Produto e ProdutoService">
+      <option name="closed" value="true" />
+      <created>1720141480792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720141480792</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Inicio de VendaService e aprimoramento da estrutura.&#10;ProdutoService: esta carregando os ProdutosPreDefinidos e produtos.txt em um HashMap.&#10;Venda e VendaService: foi criado a estrutura e métodos efetuarVenda e salvarVenda.&#10;FileService: Nova classe">
+      <option name="closed" value="true" />
+      <created>1721174846310</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721174846310</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criar classes,&#10;construir classe Produto e ProdutoService" />
+    <MESSAGE value="Inicio de VendaService e aprimoramento da estrutura.&#10;ProdutoService: esta carregando os ProdutosPreDefinidos e produtos.txt em um HashMap.&#10;Venda e VendaService: foi criado a estrutura e métodos efetuarVenda e salvarVenda.&#10;FileService: Nova classe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicio de VendaService e aprimoramento da estrutura.&#10;ProdutoService: esta carregando os ProdutosPreDefinidos e produtos.txt em um HashMap.&#10;Venda e VendaService: foi criado a estrutura e métodos efetuarVenda e salvarVenda.&#10;FileService: Nova classe" />
+  </component>
+</project>
