@@ -7,9 +7,6 @@ import java.util.logging.Logger;
 public class FileService {
     private static final Logger logger = Logger.getLogger(FileService.class.getName());
 
-    public FileService() {
-    }
-
     public void salvarObjetoEmTXT(File file, Object objeto) throws IOException {
         try { // tenta criar o arquivo
             if (!file.exists()){

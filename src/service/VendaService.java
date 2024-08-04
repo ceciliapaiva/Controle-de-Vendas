@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class VendaService {
+
     File file = new File("src/arquivos/vendas.txt");
     FileService fileService = new FileService();
     private Map<Produto, Venda> vendasEfetuadas;

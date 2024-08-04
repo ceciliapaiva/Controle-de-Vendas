@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="631165bb-7102-4568-8b19-92d9cbf9884f" name="Changes" comment="Inicio de VendaService e aprimoramento da estrutura.&#10;ProdutoService: esta carregando os ProdutosPreDefinidos e produtos.txt em um HashMap.&#10;Venda e VendaService: foi criado a estrutura e métodos efetuarVenda e salvarVenda.&#10;FileService: Nova classe">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controle_Vendas_GNbebidas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arquivos/Planejamento" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arquivos/produtos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arquivos/produtos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/GeradorDeCod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/GeradorDeCod.java" afterDir="false" />
-    </list>
+    <list default="true" id="631165bb-7102-4568-8b19-92d9cbf9884f" name="Changes" comment="Inicio" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +13,6 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="directory" />
-      <option value="module" />
     </option>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -36,6 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ceciliapaiva/Controle-de-Vendas.git",
+    "accountId": "d57391b2-f280-4802-b3c0-5ff598cfcf53"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -98,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721174846310</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Inicio">
+      <option name="closed" value="true" />
+      <created>1722733423251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722733423251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criar classes,&#10;construir classe Produto e ProdutoService" />
     <MESSAGE value="Inicio de VendaService e aprimoramento da estrutura.&#10;ProdutoService: esta carregando os ProdutosPreDefinidos e produtos.txt em um HashMap.&#10;Venda e VendaService: foi criado a estrutura e métodos efetuarVenda e salvarVenda.&#10;FileService: Nova classe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicio de VendaService e aprimoramento da estrutura.&#10;ProdutoService: esta carregando os ProdutosPreDefinidos e produtos.txt em um HashMap.&#10;Venda e VendaService: foi criado a estrutura e métodos efetuarVenda e salvarVenda.&#10;FileService: Nova classe" />
+    <MESSAGE value="Inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicio" />
   </component>
 </project>

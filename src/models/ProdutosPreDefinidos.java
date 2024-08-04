@@ -1,6 +1,7 @@
 package models;
 
 public enum ProdutosPreDefinidos {
+
     PRODUTO1("produto1", true, 15.0),
     PRODUTO2("produto2", false, 5.0);
 

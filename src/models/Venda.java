@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class Venda {
+
     // Cliente - há criar
     private LocalDateTime data;
     private int quantidade;

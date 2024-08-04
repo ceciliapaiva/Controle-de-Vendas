@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 
 public class ProdutoService implements Serializable{
     private static final Logger logger = Logger.getLogger(ProdutoService.class.getName());
+
     FileService fileService = new FileService();
     File file = new File("src/arquivos/produtos.txt");
     Map<String, Produto> mapProdutos = new HashMap<>();

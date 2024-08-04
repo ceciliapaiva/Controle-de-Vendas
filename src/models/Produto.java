@@ -6,6 +6,7 @@ import java.io.Serializable;
 
 public class Produto implements Serializable {
     private static final long serialVersionUID = 1l;
+
     private long cod;
     private String descricao;
     private boolean maisDezoito;
